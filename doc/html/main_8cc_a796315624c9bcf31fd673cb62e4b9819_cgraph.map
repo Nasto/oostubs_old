@@ -1,0 +1,22 @@
+<map id="kernel" name="kernel">
+<area shape="rect" id="node3" href="$classCGA__Screen.html#a622bc3a2822e3006579167343d639353" title="leert den aktuellen Bildschirm" alt="" coords="119,157,249,185"/>
+<area shape="rect" id="node5" href="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33" title="set the cursor position" alt="" coords="113,207,255,235"/>
+<area shape="rect" id="node7" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="744,195,789,223"/>
+<area shape="rect" id="node9" href="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9" title="ausgeben des Inhaltes des internen Puffers" alt="" coords="119,410,249,438"/>
+<area shape="rect" id="node11" href="$classCPU.html#a189729f4ca240ff52004a34b9057d448" title="hält die CPU an" alt="" coords="145,461,223,489"/>
+<area shape="rect" id="node13" href="$classTask3A.html#a871e4066c1ba233ec3640928b77c09a0" title="main part of the class" alt="" coords="311,157,417,185"/>
+<area shape="rect" id="node42" href="$classTask3B.html#aa803f35a028d2dc338d20d69ab592f20" title="prints the line" alt="" coords="131,359,237,387"/>
+<area shape="rect" id="node15" href="$classTask3A.html#a97a12ea7414c01430232e61fb5ff7744" title="Task3A::testFPN" alt="" coords="492,157,615,185"/>
+<area shape="rect" id="node20" href="$classTask3A.html#a24ddaef8aaccea6d7375c69b51f4ae57" title="Task3A::testFPNAdd" alt="" coords="481,207,625,235"/>
+<area shape="rect" id="node24" href="$classTask3A.html#af8775a5d95a83ded644b110774505d16" title="Task3A::testFPNMul" alt="" coords="483,258,624,286"/>
+<area shape="rect" id="node28" href="$classTask3A.html#aac6d8d8ded4ef22a613c5f73402752bb" title="Task3A::testFPNDiv" alt="" coords="483,55,624,83"/>
+<area shape="rect" id="node32" href="$classTask3A.html#a1be796a230de7133dbb5d4c169ebe310" title="Task3A::testFPNPow" alt="" coords="480,106,627,134"/>
+<area shape="rect" id="node36" href="$classTask3A.html#af7995eb1339c1322974393ffd597715c" title="Task3A::testFPNSqrt" alt="" coords="480,5,627,33"/>
+<area shape="rect" id="node17" href="$fixedPointNumber_8h.html#a832c00376d036efa282dd93a56a79952" title="generate a SFixedPointNumber from two parts, without extra signum" alt="" coords="732,131,801,159"/>
+<area shape="rect" id="node39" href="$structSFixedPointNumber.html#a59a33208466823c71f4881f6629c4b91" title="sqare root of the Number" alt="" coords="684,5,849,33"/>
+<area shape="rect" id="node44" href="$task3B_8cc.html#a5874bf2c7fd779b0760c4d5f16bb2d08" title="doTask3BAction" alt="" coords="305,359,423,387"/>
+<area shape="rect" id="node46" href="$task3B_8cc.html#a619f56d2ece0fd67e26e11da6c052e95" title="outputAckermannResult" alt="" coords="473,359,633,387"/>
+<area shape="rect" id="node49" href="$task3B_8cc.html#aca93d1551a065652079d5ff2ae3b2539" title="doAckermann" alt="" coords="503,410,604,438"/>
+<area shape="rect" id="node51" href="$task3B_8cc.html#a14ee0807c6f73199cdce10829f021544" title="alphaAckermann" alt="" coords="708,410,825,438"/>
+<area shape="rect" id="node53" href="$task3B_8cc.html#a093a9be7f170c441fa1da1b4742f46e4" title="gotoAnalyse" alt="" coords="899,410,992,438"/>
+</map>

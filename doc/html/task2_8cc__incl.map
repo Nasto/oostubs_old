@@ -1,0 +1,18 @@
+<map id="src/user/task2.cc" name="src/user/task2.cc">
+<area shape="rect" id="node3" href="$task2_8h.html" title="user/task2.h" alt="" coords="52,83,145,111"/>
+<area shape="rect" id="node7" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="172,83,268,111"/>
+<area shape="rect" id="node19" href="$useful_2keyboard_8h.html" title="useful/keyboard.h" alt="" coords="297,83,420,111"/>
+<area shape="rect" id="node32" href="$useful_2cpu_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable cpu" alt="" coords="455,83,545,111"/>
+<area shape="rect" id="node5" href="$appl_8h.html" title="Grundklasse für Anwendungen, für die einzelnen Aufgaben benötigt." alt="" coords="55,161,140,189"/>
+<area shape="rect" id="node9" href="$cgastr_8h.html" title="device/cgastr.h" alt="" coords="164,161,273,189"/>
+<area shape="rect" id="node11" href="$o__stream_8h.html" title="object/o_stream.h" alt="" coords="5,238,131,266"/>
+<area shape="rect" id="node17" href="$cgascr_8h.html" title="machine/cgascr.h" alt="" coords="155,238,277,266"/>
+<area shape="rect" id="node13" href="$strbuf_8h.html" title="object/strbuf.h" alt="" coords="16,315,120,343"/>
+<area shape="rect" id="node15" href="$config_8h.html" title="verschiedene defines für Einstellungen" alt="" coords="35,393,101,421"/>
+<area shape="rect" id="node21" href="$device_2keyboard_8h.html" title="device/keyboard.h" alt="" coords="300,161,425,189"/>
+<area shape="rect" id="node23" href="$keyctrl_8h.html" title="machine/keyctrl.h" alt="" coords="301,238,424,266"/>
+<area shape="rect" id="node27" href="$key_8h.html" title="machine/key.h" alt="" coords="409,315,513,343"/>
+<area shape="rect" id="node29" href="$gate_8h.html" title="guard/gate.h" alt="" coords="499,238,592,266"/>
+<area shape="rect" id="node25" href="$io__port_8h.html" title="machine/io_port.h" alt="" coords="263,315,385,343"/>
+<area shape="rect" id="node34" href="$machine_2cpu_8h.html" title="machine/cpu.h" alt="" coords="449,161,556,189"/>
+</map>

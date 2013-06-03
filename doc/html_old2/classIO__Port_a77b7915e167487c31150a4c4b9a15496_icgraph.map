@@ -1,0 +1,4 @@
+<map id="IO_Port::inb" name="IO_Port::inb">
+<area shape="rect" id="node2" href="$classKeyboard__Controller.html#a13a0e454bd8c6ee99182d05770d7c44a" title="Default constructor, turns all LEDs off and set speed and delay maximal." alt="" coords="147,5,295,46"/>
+<area shape="rect" id="node3" href="$classKeyboard__Controller.html#a686dd47e66ae9c2d9ccf1b9f84d3e99d" title="reboots the computer" alt="" coords="152,70,291,111"/>
+</map>

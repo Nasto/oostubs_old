@@ -1,0 +1,6 @@
+<map id="Key::alt_right" name="Key::alt_right">
+<area shape="rect" id="node3" href="$classKey.html#af4fa809960860523573abd695e3f8fbe" title="Key::alt_right" alt="" coords="149,13,245,41"/>
+<area shape="rect" id="node10" href="$classKey.html#ae422a2a2113c5ba1ed46ddaa7bf3ecd8" title="Key::alt" alt="" coords="165,63,229,91"/>
+<area shape="rect" id="node5" href="$classKeyboard__Controller.html#aa517065c0ed4059b477dfb481539b1b2" title="interpret the reveived scancode and modifier bits" alt="" coords="480,5,619,49"/>
+<area shape="rect" id="node7" href="$classKeyboard__Controller.html#ac2b33ffe1e2794c81249861aa792513a" title="convert the received scancode and modfier bits to an ascii char" alt="" coords="293,34,432,78"/>
+</map>

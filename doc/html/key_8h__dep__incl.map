@@ -1,0 +1,12 @@
+<map id="include/machine/key.h" name="include/machine/key.h">
+<area shape="rect" id="node3" href="$device_2keyboard_8h.html" title="include/device/keyboard.h" alt="" coords="388,161,559,189"/>
+<area shape="rect" id="node19" href="$keyctrl_8h.html" title="include/machine/keyctrl.h" alt="" coords="511,83,679,111"/>
+<area shape="rect" id="node5" href="$useful_2keyboard_8h.html" title="include/useful/keyboard.h" alt="" coords="204,238,372,266"/>
+<area shape="rect" id="node15" href="$keyboard_8cc.html" title="src/device/keyboard.cc" alt="" coords="396,238,551,266"/>
+<area shape="rect" id="node17" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="575,238,663,266"/>
+<area shape="rect" id="node7" href="$task1_8cc.html" title="src/user/task1.cc" alt="" coords="5,315,128,343"/>
+<area shape="rect" id="node9" href="$task2_8cc.html" title="src/user/task2.cc" alt="" coords="152,315,275,343"/>
+<area shape="rect" id="node11" href="$task3A_8cc.html" title="src/user/task3A.cc" alt="" coords="299,315,429,343"/>
+<area shape="rect" id="node13" href="$task3B_8cc.html" title="src/user/task3B.cc" alt="" coords="453,315,584,343"/>
+<area shape="rect" id="node22" href="$keyctrl_8cc.html" title="src/machine/keyctrl.cc" alt="" coords="583,161,735,189"/>
+</map>

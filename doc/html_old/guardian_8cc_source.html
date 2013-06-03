@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OOStuBS - Technische Informatik II (TI-II): src/guard/guardian.cc Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OOStuBS - Technische Informatik II (TI-II)
+   &#160;<span id="projectnumber">2.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8bda6b7147e495d6eac9170e373b5613.html">guard</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">guardian.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="guardian_8cc.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *                                 Technische Informatik II                                      *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *                                                                                               *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *                                     G U A R D I A N                                           *</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *                                                                                               *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">\* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* INCLUDES */</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout">useful/kout.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="useful_2cpu_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable cpu">useful/cpu.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/* GLOBAL OBJECTS */</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* declare methods as c-like  */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a9017cbb15c79b718e82c9ed18a58ed60" title="Entry point for interrupts.">guardian</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#afe78f34c7c65df79376008e0d23c1afd" title="This function is called if a normal exception is raised by the cpu.">handleException</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot, <span class="keywordtype">void</span>* eip, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> eflags, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cs);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a70466c5bd3ffac85265c22f65e9a4ef9" title="This function is called if a normal exception with error code is raised by the cpu.">handleExceptionE</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot, <span class="keywordtype">void</span>* eip, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> eflags, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cs, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> errorCode);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a390d383038610b600ab986ec9b54879a" title="This function is called if a reserved exception is raised by the cpu.">handleExceptionReserved</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/* METHODS  */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="guardian_8cc.html#a9017cbb15c79b718e82c9ed18a58ed60">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a9017cbb15c79b718e82c9ed18a58ed60" title="Entry point for interrupts.">guardian</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="guardian_8cc.html#afe78f34c7c65df79376008e0d23c1afd">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#afe78f34c7c65df79376008e0d23c1afd" title="This function is called if a normal exception is raised by the cpu.">handleException</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot, <span class="keywordtype">void</span>* eip, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> eflags, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cs){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">//Fehler melden</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">/* TODO einkommentieren</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">  kout.flush();</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">  kout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">  kout &lt;&lt; &quot;Exception &quot;    &lt;&lt; slot &lt;&lt; &quot; occures&quot;;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">  kout &lt;&lt; endl            &lt;&lt; &quot;(&quot;;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">  kout &lt;&lt; &quot;cs: &quot;        &lt;&lt; dec  &lt;&lt; cs;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">  kout &lt;&lt; &quot;, eflags: &quot;  &lt;&lt; bin  &lt;&lt; eflags;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">  kout &lt;&lt; &quot;, eip: &quot;     &lt;&lt; eip;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">  kout &lt;&lt; &quot;)&quot;           &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">//und anhalten</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a23c8f5e46dac3304f1d8def9c612b88e" title="globally dissable interrupts">disable_int</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a189729f4ca240ff52004a34b9057d448" title="halt the cpu">halt</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="guardian_8cc.html#a70466c5bd3ffac85265c22f65e9a4ef9">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a70466c5bd3ffac85265c22f65e9a4ef9" title="This function is called if a normal exception with error code is raised by the cpu.">handleExceptionE</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot, <span class="keywordtype">void</span>* eip, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> eflags, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cs, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> errorCode){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">//Fehler melden</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">/* TODO einkommentieren</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">  kout.flush();</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">  kout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">  kout &lt;&lt; &quot;Exception &quot;    &lt;&lt; slot &lt;&lt; &quot; occures&quot;;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">  kout &lt;&lt; endl            &lt;&lt; &quot;(&quot;;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">  kout &lt;&lt; &quot;cs: &quot;          &lt;&lt; dec  &lt;&lt; cs;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">  kout &lt;&lt; &quot;, eflags: &quot;    &lt;&lt; bin  &lt;&lt; eflags;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">  kout &lt;&lt; &quot;, eip: &quot;       &lt;&lt; eip;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">  kout &lt;&lt; &quot;, errorCode: &quot; &lt;&lt; bin  &lt;&lt; errorCode;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">  kout &lt;&lt; &quot;)&quot;             &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">//und anhalten</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a23c8f5e46dac3304f1d8def9c612b88e" title="globally dissable interrupts">disable_int</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a189729f4ca240ff52004a34b9057d448" title="halt the cpu">halt</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="guardian_8cc.html#a390d383038610b600ab986ec9b54879a">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guardian_8cc.html#a390d383038610b600ab986ec9b54879a" title="This function is called if a reserved exception is raised by the cpu.">handleExceptionReserved</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot){</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">//Fehler melden</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">/* TODO einkommentieren</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">  kout.flush();</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">  kout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">  kout &lt;&lt; &quot;reserved Exception &quot; &lt;&lt; slot &lt;&lt; &quot; occures&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">//und anhalten</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a23c8f5e46dac3304f1d8def9c612b88e" title="globally dissable interrupts">disable_int</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="useful_2cpu_8h.html#a0b2a3530e9a5998456be351b4251b878">cpu</a>.<a class="code" href="classCPU.html#a189729f4ca240ff52004a34b9057d448" title="halt the cpu">halt</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Die Apr 16 2013 10:22:23 für OOStuBS - Technische Informatik II (TI-II) von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

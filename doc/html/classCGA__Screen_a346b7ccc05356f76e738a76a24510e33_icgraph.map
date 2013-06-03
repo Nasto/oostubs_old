@@ -1,0 +1,10 @@
+<map id="CGA_Screen::setpos" name="CGA_Screen::setpos">
+<area shape="rect" id="node3" href="$main_8cc.html#a796315624c9bcf31fd673cb62e4b9819" title="kernel entry point" alt="" coords="240,5,296,33"/>
+<area shape="rect" id="node5" href="$classTask1.html#a48ca608ac9cdc03ab6614a4f61e2448e" title="test the functionality of the Kout object" alt="" coords="212,55,324,83"/>
+<area shape="rect" id="node7" href="$classTask1.html#a0d4029a13591e70af436c0ead066ea5c" title="parse and print multiboot information" alt="" coords="387,106,485,134"/>
+<area shape="rect" id="node9" href="$classTask1.html#a587ce3fad20f9ec4ec88beefd08db49e" title="test the functionality of the Keyboard_Controller object" alt="" coords="199,157,337,185"/>
+<area shape="rect" id="node13" href="$classTask2.html#a4adb42b6119375dfec56808c158dd7dc" title="Default constructor." alt="" coords="219,207,317,235"/>
+<area shape="rect" id="node15" href="$classTask2.html#aa5de17846032b02d6d0819cdc78b1b3e" title="prints the line" alt="" coords="219,258,317,286"/>
+<area shape="rect" id="node17" href="$classTask3A.html#a86233712775d9b45fe3d8a5eae09334d" title="Default constructor." alt="" coords="209,309,327,337"/>
+<area shape="rect" id="node19" href="$classTask3B.html#a7ec400d4732dfb10f86b72a9b767f36e" title="Default constructor." alt="" coords="209,359,327,387"/>
+</map>

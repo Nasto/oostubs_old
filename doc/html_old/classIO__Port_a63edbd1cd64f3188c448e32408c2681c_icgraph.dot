@@ -1,0 +1,10 @@
+digraph "IO_Port::outb"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IO_Port::outb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Keyboard_Controller\l::reboot",height=0.2,width=0.4,color="black",URL="$classKeyboard__Controller.html#a686dd47e66ae9c2d9ccf1b9f84d3e99d",tooltip="reboots the computer"];
+}

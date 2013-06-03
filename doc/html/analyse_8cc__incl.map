@@ -1,0 +1,11 @@
+<map id="src/user/analyse.cc" name="src/user/analyse.cc">
+<area shape="rect" id="node3" href="$analyse_8h.html" title="user/analyse.h" alt="" coords="5,83,109,111"/>
+<area shape="rect" id="node5" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="133,83,229,111"/>
+<area shape="rect" id="node17" href="$useful_2cpu_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable cpu" alt="" coords="260,83,351,111"/>
+<area shape="rect" id="node7" href="$cgastr_8h.html" title="device/cgastr.h" alt="" coords="123,161,232,189"/>
+<area shape="rect" id="node9" href="$o__stream_8h.html" title="object/o_stream.h" alt="" coords="41,238,167,266"/>
+<area shape="rect" id="node15" href="$cgascr_8h.html" title="machine/cgascr.h" alt="" coords="191,238,313,266"/>
+<area shape="rect" id="node11" href="$strbuf_8h.html" title="object/strbuf.h" alt="" coords="52,315,156,343"/>
+<area shape="rect" id="node13" href="$config_8h.html" title="verschiedene defines für Einstellungen" alt="" coords="71,393,137,421"/>
+<area shape="rect" id="node19" href="$machine_2cpu_8h.html" title="machine/cpu.h" alt="" coords="256,161,363,189"/>
+</map>

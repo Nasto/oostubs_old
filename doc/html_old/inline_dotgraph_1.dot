@@ -1,0 +1,56 @@
+ 
+  digraph task1 {
+    size="4,4";
+    node [shape=box, style="solid,filled", fillcolor=white];
+    
+    subgraph cluster_submain {
+      style=filled;
+      color=none;
+      label = "";
+      labeljust=l;
+      kernelF [label="kernel(...)", shape=oval, URL="\ref kernel"];
+    }
+    
+    subgraph cluster_submachine {
+      style=filled;
+      color=lightgray;
+      label = "machine";
+      labeljust=l;
+      cgascrC [label="CGA_Screen", URL="\ref CGA_Screen", color=blue];
+      ioportC [label="IO_Port", URL="\ref IO_Port"];
+      keyctrlC [label="Keyboard_Controller", URL="\ref Keyboard_Controller", color=blue];
+      keyC [label="Key", URL="\ref Key"];
+      keyC -> keyctrlC [arrowhead="ediamond"];
+    }
+    
+    subgraph cluster_subdevice {
+      style=filled;
+      color=lightgray;
+      label = "device";
+      labeljust=l;
+      cgastrC [label="CGA_Stream", URL="\ref CGA_Stream", color=blue];
+    }
+    
+    subgraph cluster_subobject {
+      style=filled;
+      color=lightgray;
+      label = "object";
+      labeljust=r;
+      ostrC [label="O_Stream", URL="\ref O_Stream", color=blue];
+      strbufC [label="Stringbuffer", URL="\ref Stringbuffer", color=blue];
+      ostrC -> strbufC [arrowhead="empty"];
+    }
+    
+    subgraph cluster_subuser {
+      style=filled;
+      color=lightgray;
+      label = "user";
+      labeljust=l;
+      task1C [label="Task1", URL="\ref Task1"];
+    }
+    
+    kernelF -> task1C [arrowhead="open"];
+    task1C -> cgastrC [arrowhead="open"];
+    cgastrC -> cgascrC [arrowhead="empty"];
+    cgastrC -> ostrC [arrowhead="empty"];
+  }

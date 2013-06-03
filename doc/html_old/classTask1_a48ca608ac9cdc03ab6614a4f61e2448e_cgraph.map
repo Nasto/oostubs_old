@@ -1,0 +1,8 @@
+<map id="Task1::testKout" name="Task1::testKout">
+<area shape="rect" id="node3" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="215,5,260,33"/>
+<area shape="rect" id="node5" href="$classCGA__Screen.html#a6f47426c0cf0662b6835d64e08cf929e" title="get the cursor position" alt="" coords="167,55,308,83"/>
+<area shape="rect" id="node7" href="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9" title="ausgeben des Inhaltes des internen Puffers" alt="" coords="172,106,303,134"/>
+<area shape="rect" id="node9" href="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33" title="set the cursor position" alt="" coords="167,157,308,185"/>
+<area shape="rect" id="node11" href="$o__stream_8h.html#a143762d59413d6d7cae38fb25104c5c4" title="switch basis of o_stream to decimal" alt="" coords="216,207,259,235"/>
+<area shape="rect" id="node13" href="$o__stream_8h.html#ac9bf4a3a6b7a2f0105d73ce270f5e69d" title="switch basis of o_stream to hexadecimal" alt="" coords="216,258,259,286"/>
+</map>

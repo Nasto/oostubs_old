@@ -1,0 +1,14 @@
+<map id="include/config.h" name="include/config.h">
+<area shape="rect" id="node3" href="$strbuf_8h.html" title="include/object/strbuf.h" alt="" coords="320,83,467,111"/>
+<area shape="rect" id="node13" href="$cgastr_8cc.html" title="src/device/cgastr.cc" alt="" coords="429,315,565,343"/>
+<area shape="rect" id="node24" href="$boot_8S.html" title="src/internal/boot.S" alt="" coords="541,83,667,111"/>
+<area shape="rect" id="node26" href="$cgascr_8cc.html" title="src/machine/cgascr.cc" alt="" coords="691,83,840,111"/>
+<area shape="rect" id="node5" href="$o__stream_8h.html" title="include/object/o_stream.h" alt="" coords="140,161,308,189"/>
+<area shape="rect" id="node21" href="$strbuf_8cc.html" title="src/object/strbuf.cc" alt="" coords="332,161,463,189"/>
+<area shape="rect" id="node7" href="$cgastr_8h.html" title="include/device/cgastr.h" alt="" coords="139,238,291,266"/>
+<area shape="rect" id="node19" href="$o__stream_8cc.html" title="src/object/o_stream.cc" alt="" coords="315,238,467,266"/>
+<area shape="rect" id="node9" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="8,315,147,343"/>
+<area shape="rect" id="node15" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="171,315,259,343"/>
+<area shape="rect" id="node17" href="$task1_8cc.html" title="src/user/task1.cc" alt="" coords="283,315,400,343"/>
+<area shape="rect" id="node11" href="$guardian_8cc.html" title="src/guard/guardian.cc" alt="" coords="5,393,149,421"/>
+</map>

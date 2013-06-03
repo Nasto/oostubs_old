@@ -1,0 +1,6 @@
+<map id="include/machine/cpu.h" name="include/machine/cpu.h">
+<area shape="rect" id="node3" href="$useful_2cpu_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable cpu" alt="" coords="9,83,145,111"/>
+<area shape="rect" id="node7" href="$keyctrl_8cc.html" title="src/machine/keyctrl.cc" alt="" coords="169,83,319,111"/>
+<area shape="rect" id="node9" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="343,83,431,111"/>
+<area shape="rect" id="node5" href="$guardian_8cc.html" title="src/guard/guardian.cc" alt="" coords="5,161,149,189"/>
+</map>

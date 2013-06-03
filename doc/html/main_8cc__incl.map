@@ -1,0 +1,21 @@
+<map id="src/main.cc" name="src/main.cc">
+<area shape="rect" id="node3" href="$multiboot_8h.html" title="machine/multiboot.h" alt="" coords="5,161,144,189"/>
+<area shape="rect" id="node7" href="$machine_2cpu_8h.html" title="machine/cpu.h" alt="" coords="480,83,587,111"/>
+<area shape="rect" id="node9" href="$machine_2pic_8h.html" title="machine/pic.h" alt="" coords="521,161,623,189"/>
+<area shape="rect" id="node13" href="$machine_2plugbox_8h.html" title="machine/plugbox.h" alt="" coords="811,83,939,111"/>
+<area shape="rect" id="node17" href="$device_2keyboard_8h.html" title="device/keyboard.h" alt="" coords="661,83,787,111"/>
+<area shape="rect" id="node26" href="$cgastr_8h.html" title="device/cgastr.h" alt="" coords="1091,83,1200,111"/>
+<area shape="rect" id="node36" href="$device_2panic_8h.html" title="device/panic.h" alt="" coords="963,83,1067,111"/>
+<area shape="rect" id="node39" href="$task1_8h.html" title="Klassendeklaration für erste Aufgabe." alt="" coords="112,83,205,111"/>
+<area shape="rect" id="node45" href="$task3A_8h.html" title="user/task3A.h" alt="" coords="229,83,331,111"/>
+<area shape="rect" id="node48" href="$task3B_8h.html" title="user/task3B.h" alt="" coords="355,83,456,111"/>
+<area shape="rect" id="node11" href="$io__port_8h.html" title="machine/io_port.h" alt="" coords="535,238,657,266"/>
+<area shape="rect" id="node15" href="$gate_8h.html" title="guard/gate.h" alt="" coords="844,161,937,189"/>
+<area shape="rect" id="node19" href="$keyctrl_8h.html" title="machine/keyctrl.h" alt="" coords="647,161,769,189"/>
+<area shape="rect" id="node22" href="$key_8h.html" title="machine/key.h" alt="" coords="729,238,833,266"/>
+<area shape="rect" id="node28" href="$o__stream_8h.html" title="object/o_stream.h" alt="" coords="1029,161,1155,189"/>
+<area shape="rect" id="node34" href="$cgascr_8h.html" title="machine/cgascr.h" alt="" coords="1179,161,1301,189"/>
+<area shape="rect" id="node30" href="$strbuf_8h.html" title="object/strbuf.h" alt="" coords="1040,238,1144,266"/>
+<area shape="rect" id="node32" href="$config_8h.html" title="verschiedene defines für Einstellungen" alt="" coords="1059,315,1125,343"/>
+<area shape="rect" id="node42" href="$appl_8h.html" title="Grundklasse für Anwendungen, für die einzelnen Aufgaben benötigt." alt="" coords="237,161,323,189"/>
+</map>

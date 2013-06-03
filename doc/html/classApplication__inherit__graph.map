@@ -1,0 +1,6 @@
+<map id="Application" name="Application">
+<area shape="rect" id="node3" href="$classTask1.html" title="Erste Testanwendung." alt="" coords="5,83,64,111"/>
+<area shape="rect" id="node5" href="$classTask2.html" title="Second test application." alt="" coords="88,83,147,111"/>
+<area shape="rect" id="node7" href="$classTask3A.html" title="Third test application, part 1." alt="" coords="171,83,237,111"/>
+<area shape="rect" id="node9" href="$classTask3B.html" title="Third test application, part 2." alt="" coords="261,83,328,111"/>
+</map>

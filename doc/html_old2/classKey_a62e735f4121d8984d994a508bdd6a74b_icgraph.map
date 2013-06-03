@@ -1,0 +1,4 @@
+<map id="Key::shift" name="Key::shift">
+<area shape="rect" id="node2" href="$classKeyboard__Controller.html#aa517065c0ed4059b477dfb481539b1b2" title="interpret the reveived scancode and modifier bits" alt="" coords="317,5,456,46"/>
+<area shape="rect" id="node3" href="$classKeyboard__Controller.html#ac2b33ffe1e2794c81249861aa792513a" title="convert the received scancode and modfier bits to an ascii char" alt="" coords="131,34,269,75"/>
+</map>

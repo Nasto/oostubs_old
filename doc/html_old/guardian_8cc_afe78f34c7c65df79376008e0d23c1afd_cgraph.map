@@ -1,0 +1,4 @@
+<map id="handleException" name="handleException">
+<area shape="rect" id="node3" href="$classCPU.html#a23c8f5e46dac3304f1d8def9c612b88e" title="globally dissable interrupts" alt="" coords="172,5,287,33"/>
+<area shape="rect" id="node5" href="$classCPU.html#a189729f4ca240ff52004a34b9057d448" title="halt the cpu" alt="" coords="192,55,267,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="bin" name="bin">
+<area shape="rect" id="node3" href="$guardian_8cc.html#afe78f34c7c65df79376008e0d23c1afd" title="This function is called if a normal exception is raised by the cpu." alt="" coords="109,5,224,33"/>
+<area shape="rect" id="node5" href="$guardian_8cc.html#a70466c5bd3ffac85265c22f65e9a4ef9" title="This function is called if a normal exception with error code is raised by the cpu." alt="" coords="105,55,228,83"/>
+<area shape="rect" id="node7" href="$classTask1.html#af4e3f3b3085e350a5e939da4dba2738d" title="parse and print the multiboot information" alt="" coords="93,106,240,134"/>
+<area shape="rect" id="node9" href="$classTask1.html#a0d4029a13591e70af436c0ead066ea5c" title="parse and print multiboot information" alt="" coords="288,106,387,134"/>
+</map>

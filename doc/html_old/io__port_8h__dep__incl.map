@@ -1,0 +1,12 @@
+<map id="include/machine/io_port.h" name="include/machine/io_port.h">
+<area shape="rect" id="node3" href="$cgascr_8h.html" title="include/machine/cgascr.h" alt="" coords="245,99,413,127"/>
+<area shape="rect" id="node19" href="$keyctrl_8h.html" title="include/machine/keyctrl.h" alt="" coords="429,177,597,205"/>
+<area shape="rect" id="node5" href="$cgastr_8h.html" title="include/device/cgastr.h" alt="" coords="253,177,405,205"/>
+<area shape="rect" id="node17" href="$cgascr_8cc.html" title="src/machine/cgascr.cc" alt="" coords="80,177,229,205"/>
+<area shape="rect" id="node7" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="165,254,304,282"/>
+<area shape="rect" id="node11" href="$cgastr_8cc.html" title="src/device/cgastr.cc" alt="" coords="5,254,141,282"/>
+<area shape="rect" id="node13" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="469,254,557,282"/>
+<area shape="rect" id="node15" href="$task1_8cc.html" title="src/user/task1.cc" alt="" coords="328,254,445,282"/>
+<area shape="rect" id="node9" href="$guardian_8cc.html" title="src/guard/guardian.cc" alt="" coords="163,331,307,359"/>
+<area shape="rect" id="node21" href="$keyctrl_8cc.html" title="src/machine/keyctrl.cc" alt="" coords="581,254,731,282"/>
+</map>

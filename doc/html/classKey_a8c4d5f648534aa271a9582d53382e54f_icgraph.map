@@ -1,0 +1,5 @@
+<map id="Key::ctrl_right" name="Key::ctrl_right">
+<area shape="rect" id="node3" href="$classKey.html#a90ea541bc6d1286a517eaccd700c4ba0" title="Key::ctrl_right" alt="" coords="156,13,255,41"/>
+<area shape="rect" id="node7" href="$classKey.html#ace132391315a2fb7d4f4fb3ebcae0f59" title="Key::ctrl" alt="" coords="172,63,239,91"/>
+<area shape="rect" id="node5" href="$classKeyboard__Controller.html#aa517065c0ed4059b477dfb481539b1b2" title="interpret the reveived scancode and modifier bits" alt="" coords="304,5,443,49"/>
+</map>

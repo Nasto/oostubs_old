@@ -1,0 +1,8 @@
+<map id="Task3B::action" name="Task3B::action">
+<area shape="rect" id="node3" href="$task3B_8cc.html#a5874bf2c7fd779b0760c4d5f16bb2d08" title="doTask3BAction" alt="" coords="164,30,281,58"/>
+<area shape="rect" id="node5" href="$task3B_8cc.html#a619f56d2ece0fd67e26e11da6c052e95" title="outputAckermannResult" alt="" coords="332,5,492,33"/>
+<area shape="rect" id="node9" href="$task3B_8cc.html#aca93d1551a065652079d5ff2ae3b2539" title="doAckermann" alt="" coords="361,55,463,83"/>
+<area shape="rect" id="node7" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="579,5,624,33"/>
+<area shape="rect" id="node11" href="$task3B_8cc.html#a14ee0807c6f73199cdce10829f021544" title="alphaAckermann" alt="" coords="543,55,660,83"/>
+<area shape="rect" id="node13" href="$task3B_8cc.html#a093a9be7f170c441fa1da1b4742f46e4" title="gotoAnalyse" alt="" coords="709,55,803,83"/>
+</map>

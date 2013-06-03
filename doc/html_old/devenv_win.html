@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OOStuBS - Technische Informatik II (TI-II): Enwicklungsumgebung Windows aufsetzen</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OOStuBS - Technische Informatik II (TI-II)
+   &#160;<span id="projectnumber">2.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="devenv.html">Enwicklungsumgebung</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enwicklungsumgebung Windows aufsetzen </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="toc"><h3>Inhaltsverzeichnis</h3>
+<ul><li class="level1"><a href="#devenv_win_sec0">Schritt 0 - Vorwort</a></li>
+<li class="level1"><a href="#devenv_win_sec1">Schritt 1 - Cygwin</a></li>
+<li class="level1"><a href="#devenv_win_sec2">Schritt 2 - Doxygen und Graphviz</a></li>
+<li class="level1"><a href="#devenv_win_sec3">Schritt 3 - QEMU</a><ul><li class="level2"><a href="#devenv_win_sec3_1">Variante 1: fertige Binaries verwenden</a></li>
+<li class="level2"><a href="#devenv_win_sec3_2">Variante 2: QEMU selber bauen</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#devenv_win_sec4">Schritt 4 - Codevorbereitung</a><ul><li class="level2"><a href="#devenv_win_sec4_1">Windows-Anpassungen - Makefile</a></li>
+<li class="level2"><a href="#devenv_win_sec4_2">Optional: Funktionstest</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#devenv_win_sec5">Schritt 5 - Visual Studio</a></li>
+<li class="level1"><a href="#devenv_win_sec6">Schritt 6 - bootfähiger USB-Stick</a></li>
+<li class="level1"><a href="#devenv_win_sec7">Schritt 7 - Vorgaben weiterer Aufgaben</a></li>
+<li class="level1"><a href="#devenv_win_sec8">Alternativen</a></li>
+<li class="level1"><a href="#devenv_win_sec9">Quellen und Links</a></li>
+<li class="level1"><a href="#devenv_win_secA">Changelog</a></li>
+</ul>
+</div>
+<div class="textblock"><h1><a class="anchor" id="devenv_win_sec0"></a>
+Schritt 0 - Vorwort</h1>
+<p><b>Es wird kein Unterstützung für Windows gewährt!</b> Jeder der unter Windows entwickeln möchte muss seine Probleme selber lösen. <b>Es wird empfohlen unter Linux/Solaris zu entwickeln</b>. Für alle, die dennoch Windows verwenden wollen, bietet diese Anleitung eine Orientierung einer möglichen Einrichtung der Entwicklungsumgebung unter Windows. Es wird nicht garantiert, dass die Befolgung dieser Anleitung zwangsweise zum Ziel führt.</p>
+<dl class="section attention"><dt>Achtung</dt><dd>Eine nicht funktionierende Entwicklungsumgebung ist keine Ausrede, warum eine Aufgabe nicht rechtzeitig abgegeben werden konnte. <br/>
+ Die Verwendung dieser Anleitung geschieht auf eigene Gefahr, bestimmte Schritte können in seltenen Fällen das System (Windows) zerstören bzw. unbrauchbar machen.</dd></dl>
+<p>Es gibt viele Möglichkeiten auch unter Windows ein Betriebssystem zu entwickeln. Aufgrund der Vorgaben für den GNU-C-Compiler wurde sich für eine Kombination von Cygwin, Doxygen, QEMU und Visual Studio 2010 entschieden. Eine Alternative zu Cygwin bietet <a href="http://www.mingw.org/">MinGW</a>. <br/>
+ Diese Anleitung wurde unter Windows 7 Professional 64 Bit, mit Visual Studio 2010 Ultimate - beides mittels MSDNAA für FIN-Studenten kostenlos zu erhalten - vom 14.08. bis 21.09.2011 herum mit den neusten Versionen von Cygwin, Doxygen, Graphviz, QEMU und Syslinux entwickelt und getestet. <br/>
+ Am 12.04.2013 wurde die Anleitung überholt und auf die geänderte Vorgabe und den neuen Programmversionen angepasst. Zusätzlich wurde unter einem 32Bit Windows XP Professional, welches unter <a href="https://www.virtualbox.org/">VirtualBox</a> lief, getestet.</p>
+<h1><a class="anchor" id="devenv_win_sec1"></a>
+Schritt 1 - Cygwin</h1>
+<p>Unter <a href="http://cygwin.com/install.html">http://cygwin.com/install.html</a> kann die <a href="http://cygwin.com/setup.exe">Installationsroutine</a> herunter geladen werden. Diese bietet lediglich ein Interface, in dem die gewollten Pakete ausgewählt werden. Diese werden dann aus dem Internet herunter geladen und installiert.<br/>
+ Nachdem die Routine heruntergeladen wurde, muss sie ausgeführt werden. Dabei ist es u.U. erforderlich, der Anwendung Administratorrechte zu erlauben (Windows Vista/Windows 7). Im Anschluss werden sich die Informationen durchgelesen und zweimal "Weiter" betätigt. Nun gilt es den Installationsort auszuwählen, es wird einer ohne Leerzeichen im Pfad empfohlen, in dieser Anleitung wird "F:\Programme\CygWin\" verwendet. Danach "Weiter" klicken und dann den Ort auswählen, in dem die aus dem Internet heruntergeladenen Dateien zwischengespeichert werden sollen. Abschließend wird dieser mit "Weiter" festgelegt. Im folgenden Dialog wird eine Direktverbindung zum Herunterladen ausgewählt. Nach einem weiteren Klick auf "Weiter" werden kurz Dateien aus dem Internet geladen und dann eine Liste mit Mirror-Servern angeboten. Hier muss einer ausgewählt werden und dieser erneut mit "Weiter" betätigt werden. Nun werden einige Grunddateien aus dem Internet herunter geladen. Es kann dabei eine Meldung auftauchen, dass dies eine Installation ist und eine bereits installierte Version beeinflussen könnte. Dies kann mit "OK" bestätigt werden.<br/>
+ Es folgt ein Menü mit der Auswahl der zu installierenden Pakete, gemäß der Linux-Umgebung werden folgende Pakete benötigt und sollten ausgewählt werden (per Klick auf "Skip"): </p>
+<pre class="fragment"> unter "Devel"
+            binutils
+            gcc4 (Version 4.5.3 oder höher)
+            gcc4-core (Version 4.5.3 oder höher)
+            gcc4-g++ (Version 4.5.3 oder höher)
+            gdb
+            make
+            patchutils</pre><p>Es sollten keine Pakete abgewählt werden, die vorausgewählt waren. Wichtig ist an dieser Stelle, dass die gcc4-Pakete als 4.5-Version (oder höher) ausgewählt werden. Beim ersten Klick auf Skip wurde bei den Tests manchmal 4.3.4 als Version angezeigt. Diese unterstützt allerdings die benötigte Option "-fno-leading-underscore" nicht. Ein erneuter Klick bringt in einem solchen Fall dann die 4.5.3 hervor. Dies ist für alle gcc4-Pakete einzeln anzugeben.<br/>
+ </p>
+<dl class="section note"><dt>Zu beachten</dt><dd>In der aktuellen Version (Stand: 12.04.2013) wird Version 4.7.2-2 als erste Auswahl angezeigt. Mit dieser Version wurden erfolgreich Tests durchgeführt.</dd></dl>
+<p>Mit "Weiter" werden Abhängigkeiten aufgelistet, die mit installiert werden müssen. Hier sollte ein Haken bei "Select required packages" vorhanden sein. Mit "Weiter" werden die Pakete dann heruntergeladen und installiert. Nachdem dies abgeschlossen ist, kann mit "Fertig stellen" die Installation abgeschlossen werden. Es wird ein Neustart des Computers empfohlen.</p>
+<h4>Bilder</h4>
+ 
+        <ul style="margin:2px; padding:0px;">
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_01.png">
+              <img width=200 src="small_InstallCygwin_01.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_02.png">
+              <img width=200 src="small_InstallCygwin_02.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_03.png">
+              <img width=200 src="small_InstallCygwin_03.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_04.png">
+              <img width=200 src="small_InstallCygwin_04.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_05.png">
+              <img width=200 src="small_InstallCygwin_05.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_06.png">
+              <img width=200 src="small_InstallCygwin_06.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_07.png">
+              <img width=200 src="small_InstallCygwin_07.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_08.png">
+              <img width=200 src="small_InstallCygwin_08.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_09.png">
+              <img width=200 src="small_InstallCygwin_09.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_10.png">
+              <img width=200 src="small_InstallCygwin_10.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_11.png">
+              <img width=200 src="small_InstallCygwin_11.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_12.png">
+              <img width=200 src="small_InstallCygwin_12.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_13.png">
+              <img width=200 src="small_InstallCygwin_13.png" />
+            </a>
+          </li>
+          <li style="list-style:none; display:inline; margin:2px; padding:2px;">
+            <a href="InstallCygwin_14.png">
+              <img width=200 src="small_InstallCygwin_14.png" />
+            </a>
+          </li>
+        </ul>
+ <h1><a class="anchor" id="devenv_win_sec2"></a>
+Schritt 2 - Doxygen und Graphviz</h1>
+<p>Doxygen kann zwar mit Cygwin installiert werden, allerdings gab es in letzter Zeit einige nützliche Änderungen, weshalb empfohlen wird, die neuste Version zu verwenden.<br/>
+ Diese kann von der <a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen-Webseite</a> unter <a href="http://www.stack.nl/~dimitri/doxygen/download.html#latestsrc">Downloads</a> herunter geladen werden. Hier sollte das "binaries in a zip"-Paket genutzt werden. Nachdem dieses heruntergeladen wurde, kann es entpackt werden. Prinzipiell ist es egal, wo die zwei Exe-Dateien und die eine Cgi-Datei hin gespeichert werden, der Pfad sollte aber bekannt und ohne Leertaste sein. In dieser Anleitung wird "F:\Programme\Doxygen\" verwendet, eine ordentliche Strukturierung ist immer gut. Analoges gilt für Graphviz. Dieses kann auf der <a href="http://www.graphviz.org/">offiziellen Webseite</a> unter <a href="http://www.graphviz.org/Download.php">Downloads</a> herunter geladen werden. Dazu muss den Lizenzen zugestimmt werden. Im Anschluss kann der Windows-Installer, in diesem Beispiel "graphviz-2.30.1.msi" geladen und danach ausgeführt werden. </p>
+<dl class="section warning"><dt>Warnung</dt><dd>Früher war folgende Fehlermeldung auf der Webseite zu lesen:<br/>
+ <b>Warning:</b> Not safe to use on Windows 7! On September 17, a Windows 7 user warned that a failed installation wiped out the system PATH variable and this was a lot of trouble because the installer does not create a restore point. We will investigate.</dd></dl>
+<p>Legt also vor der Installation einen <a href="http://www.netzwerktotal.de/windows7wiederherstellungspunkt.htm">Wiederherstellungspunkt</a> an und speichert euch am besten noch die PATH-Umgebungsvariable zwischen (unter Windows 7 Tastenkombination [Windows]+[Pause], links "erweiterte Systemeinstellungen", untere Schaltfläche "Umgebungsvariablen", bei Systemvariablen Path suchen und auswählen, "Bearbeiten" und den Wert in eine Textdatei kopieren und diese speichern). <br/>
+ In diesem Beispiel wird Graphviz nach "F:\Programme\Graphviz" installiert. Ist die Installation geglückt, so ist ein Neustart bestimmt keine schlechte Sache.</p>
+<h1><a class="anchor" id="devenv_win_sec3"></a>
+Schritt 3 - QEMU</h1>
+<p>Es gibt zwei Wege an QEMU für Windows heran zu kommen. Die erste und einfache Variante ist es, eine bereits kompilierte Version zu verwenden. Die zweite Variante ist dann logischer Weise, es selber zu bauen. Dabei kann die Cygwin-Umgebung genutzt werden.</p>
+<h2><a class="anchor" id="devenv_win_sec3_1"></a>
+Variante 1: fertige Binaries verwenden</h2>
+<p>Unter <a href="http://qemu-buch.de/de/index.php/QEMU-KVM-Buch/_QEMU_unter_Microsoft_Windows#QEMU_ohne_GUI">qemu-buch.de</a> ist ein Link zu den Binaries von QEMU für Windows angegeben. Es gilt das Zip-Paket <a href="http://qemu-buch.de/download/qemu-1.3-windows.zip">qemu-1.3-windows.zip</a> herunter zu laden und zu entpacken. Der Inhalt des Ordners "qemu-1.3-windows" wird in dieser Anleitung nach "F:\Programme\QEMU" entpackt.</p>
+<h2><a class="anchor" id="devenv_win_sec3_2"></a>
+Variante 2: QEMU selber bauen</h2>
+<p>Diese Variante wird hier nicht genau beschrieben. Nur so viel, der Quellcode von QEMU kann von der <a href="http://wiki.qemu.org/Main_Page">Webseite</a> des Projektes herunter geladen werden. Aktuell ist momentan <a href="http://wiki.qemu-project.org/download/qemu-1.4.0.tar.bz2">qemu-1.4.0.tar.bz2</a>. Im Internet können verschiedene Anleitungen für das Kompilieren gefunden werden. Einige (z.B. qemu-buch.de) sehen vor, dies unter einem Linux mit MinGW zu bauen.</p>
+<h1><a class="anchor" id="devenv_win_sec4"></a>
+Schritt 4 - Codevorbereitung</h1>
+<p>Nachdem nun Großteile der Entwicklungsumgebung existieren, geht es an den Quellcode selber. Es ist an der Zeit die Vorgaben der ersten Aufgabe herunter zu laden und zu entpacken. In diesem Beispiel werden die Daten nach "F:\Daten\oostubs\code" gepackt. Der Ordner "F:\Daten\oostubs" soll später alles direkt für OOStuBS enthalten. Sollte nach dem entpacken ein Ordner namens "F:\Daten\oostubs\code\oostubs" existieren, so ist dessen Inhalt nach "F:\Daten\oostubs\code", also einen Ordner höher, zu verschieben, so dass z.B. die Datei "F:\Daten\oostubs\code\Makefile" existiert, der leere oostubs-Ordner kann nun gelöscht werden.</p>
+<h2><a class="anchor" id="devenv_win_sec4_1"></a>
+Windows-Anpassungen - Makefile</h2>
+<p>Da unter misc von OOStuBS bereits ein windows-Ordner existiert, muss nur in der Datei "F:\Daten\oostubs\code\Makefile" muss in der Zeile mit "PLATFORM=" der Teil danach in "windows" anstelle des vorhandenen - in diesem Beispiel "linux" - umgeändert werden.</p>
+<h2><a class="anchor" id="devenv_win_sec4_2"></a>
+Optional: Funktionstest</h2>
+<p>Es besteht nun die Möglichkeit zu schauen, ob OOStuBS bereits gebaut, wenn auch noch nicht mit QEMU gestartet, werden kann. Dies müsste theoretisch bereits der Fall sein, sofern keine Fehler aufgetreten sind. <br/>
+ Zu diesem Zweck wird die Datei "F:\Programme\CygWin\Cygwin.bat" ausgeführt. Im Anschluss wird "cd /cygdrive/f/Daten/oostubs/code/" [ENTER] und danach "make" [ENTER] eingegeben. Es sollten keine Fehlermeldungen angezeigt werden. Danach folgt noch ein "make clean" [ENTER]. Der komplette Ablauf müsste dann etwa wie folgt aussehen: </p>
+<pre class="fragment">a@b ~
+$ cd /cygdrive/f/Daten/oostubs/code/
+
+a@b /cygdrive/f/Daten/oostubs/code
+$ make
+(ASM  ) build/boot.o &lt;- src/asm/boot.S
+(CXX  ) build/cgastr.o &lt;- src/device/cgastr.cc
+(CXX  ) build/guardian.o &lt;- src/guard/guardian.cc
+(CXX  ) build/cgascr.o &lt;- src/machine/cgascr.cc
+(CXX  ) build/keyctrl.o &lt;- src/machine/keyctrl.cc
+(CXX  ) build/o_stream.o &lt;- src/object/o_stream.cc
+(CXX  ) build/strbuf.o &lt;- src/object/strbuf.cc
+(CXX  ) build/main.o &lt;- src/main.cc
+(ASM  ) build/compat.o &lt;- src/asm/compat.S
+(CC   ) build/inifini.o &lt;- misc/windows/inifini.c
+(LD   ) bin/oostubs &lt;- [boot.o cgastr.o guardian.o cgascr.o keyctrl.o o_stream.o strbuf.o main.o compat.o inifini.o]
+
+a@b /cygdrive/f/Daten/oostubs/code
+$ make clean
+(CLEAN)
+
+a@b /cygdrive/f/Daten/oostubs/code
+$</pre> <dl class="section note"><dt>Zu beachten</dt><dd>Anstelle von a@b müsste der unter Windows verwendete Benutzername "@" Computername des gerade genutzten Computers erscheinen.</dd></dl>
+<h1><a class="anchor" id="devenv_win_sec5"></a>
+Schritt 5 - Visual Studio</h1>
+<h1><a class="anchor" id="devenv_win_sec6"></a>
+Schritt 6 - bootfähiger USB-Stick</h1>
+<h1><a class="anchor" id="devenv_win_sec7"></a>
+Schritt 7 - Vorgaben weiterer Aufgaben</h1>
+<h1><a class="anchor" id="devenv_win_sec8"></a>
+Alternativen</h1>
+<h1><a class="anchor" id="devenv_win_sec9"></a>
+Quellen und Links</h1>
+<ul>
+<li><a href="http://cygwin.com/">Cygwin</a></li>
+<li><a href="http://wiki.qemu.org/Main_Page">QEMU</a></li>
+<li><a href="http://www.mingw.org/">MinGW</a></li>
+<li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a></li>
+<li><a href="http://www.graphviz.org">Graphviz</a></li>
+<li><a href="http://www.syslinux.org/wiki/">Syslinux</a></li>
+<li><a href="http://www.gnu.org/software/diffutils/manual/html_mono/diff.html">GNU Dokumentation "Comparing and Merging Files"</a></li>
+</ul>
+<ul>
+<li><a href="http://wiki.osdev.org/">OSDev.org-Wiki</a></li>
+<li><a href="http://www.lowlevel.eu/wiki">Lowlevel-Wiki</a></li>
+<li><a href="http://qemu-buch.de/d/QEMU_unter_Microsoft_Windows">QEMU unter Windows</a></li>
+<li><a href="http://migeel.sk/blog/2009/04/21/gdb-and-qemu-on-windows/">GDB und QEMU unter Windows - Problem</a></li>
+<li><a href="http://mikehadlow.blogspot.com/2007/03/building-visual-studio-custom-project.html">eigener Visual Studio Projekt-Typ</a></li>
+</ul>
+<h1><a class="anchor" id="devenv_win_secA"></a>
+Changelog</h1>
+<dl class="section author"><dt>Autor</dt><dd>Michael Schiefer </dd></dl>
+<dl class="section date"><dt>Datum</dt><dd>12.04.2013 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1.1</dd></dl>
+<p><b>Changelog:</b> </p>
+<table  style="margin-left:8px;">
+<tr>
+<th style="vertical-align:top;">1.0.0 (23.09.2011) </th><td><ul style="margin:0px; margin-left:2px; margin-bottom:2px;">
+<li>
+Anleitung fertig gestellt </li>
+</ul>
+</td></tr>
+<tr>
+<th style="vertical-align:top;">1.0.1 (09.10.2011) </th><td><ul style="margin:0px; margin-left:2px; margin-bottom:2px;">
+<li>
+Namenskonventionen bei Syslinux angemerkt </li>
+</ul>
+</td></tr>
+<tr>
+<th style="vertical-align:top;">1.0.2 (11.10.2011) </th><td><ul style="margin:0px; margin-left:2px; margin-bottom:2px;">
+<li>
+kleine Fehlerbehebung in angebotenen Dateipaketen </li>
+<li>
+Bilder diesbez&uuml;glich aktualisiert </li>
+</ul>
+</td></tr>
+<tr>
+<th style="vertical-align:top;">1.1.0 (08.11.2011) </th><td><ul style="margin:0px; margin-left:2px; margin-bottom:2px;">
+<li>
+Umgang mit Fehlern von "patch" (reject-Dateien) eingef&uuml;gt </li>
+</ul>
+</td></tr>
+<tr>
+<th style="vertical-align:top;">1.1.1 (12.04.2013) </th><td><ul style="margin:0px; margin-left:2px; margin-bottom:2px;">
+<li>
+Einbindung in Dokumentation </li>
+<li>
+Aktualisierung der einzelnen Programmversionen </li>
+<li>
+Syslinux an 5.0.1 angepasst </li>
+<li>
+Windows XP getestet </li>
+</ul>
+</td></tr>
+</table>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Die Apr 16 2013 10:22:23 für OOStuBS - Technische Informatik II (TI-II) von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

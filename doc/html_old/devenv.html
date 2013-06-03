@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OOStuBS - Technische Informatik II (TI-II): Enwicklungsumgebung</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OOStuBS - Technische Informatik II (TI-II)
+   &#160;<span id="projectnumber">2.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enwicklungsumgebung </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Als Entwicklungsumgebung wird Linux in Form von einer 32- oder 64-Bit Variante vorgesehen. Es gibt in den Vorgaben auch die Möglichkeit für MacOSX und <a class="el" href="devenv_win.html">Windows mit CygWin</a> , diese sind zwar getestet werden aber beide nicht unterstützt. Sollten Fehler auftreten, so können zwar die Übungsleiter gefragt werden, wir garantieren aber weder, dass die Lösungen laufen, noch dass wir immer bei Problemen helfen können. Jeder der eine der beiden Umgebungen nutzt muss notfalls selber eine Lösung für seine Probleme finden.</p>
+<p>Auf den Rechnern im Labor ist Ubuntu vorinstalliert und kann entsprechend genutzt werden. Wer auf seinem privaten Rechner nur Windows installiert hat, kann entweder zusätzlich ein Linux wie Ubuntu installieren, oder <a class="el" href="devenv_ubu.html">in einer Virtuellen Umgebung ein Linux installieren</a>.</p>
+<dl class="section attention"><dt>Achtung</dt><dd>Fehlgeschlagene Installationen auf dem privaten Rechner werden nicht als Ausrede für eine verspätete Abgabe akzeptiert.</dd></dl>
+<h1><a class="anchor" id="devenv_sec0"></a>
+Umgebung der Betriebssystementwicklung</h1>
+<p>Es gibt eine Vielzahl von Linux Distributionen und somit eine Vielzahl von möglichen Installationsvarianten. Aus diesem Grund wird die Aufsetzung der Entwicklungsumgebung anhand von Ubuntu 12.10 gezeigt. In anderen Distributionen läuft dies ähnlich ab, nur sind dann unter Umständen andere, mehr oder weniger Pakete zu installieren.</p>
+<p>In Ubuntu wird eine <a href="http://complete-concrete-concise.com/ubuntu-2/ubuntu-12-10/how-to-get-a-command-line-shell-or-terminal">Konsole geöffnet</a>. Im Anschluss wird folgendes eingegeben: </p>
+<pre class="fragment">sudo apt-get install build-essential gcc g++ gdb binutils make doxygen graphviz patch qemu
+cd [Ordner]
+wget [Archiv-Adresse]
+tar xvfz [Archiv-Name].tar.gz
+</pre><p>Dabei muss [Ordner] mit dem Ordner ersetzt werden, in dem OOStuBS liegen soll. [Archiv-Adresse] ist die Adresse zum Archiv auf der Webseite, in dem die Vorgabe liegt. [Archiv-Name] ist dann der Name des heruntergeladenen Archivs, ohne Endung. Die Endung müsste ".tar.gz" sein.</p>
+<h1><a class="anchor" id="devenv_sec1"></a>
+OOStuBS bauen</h1>
+<p>Zum Bauen von OOStuBS muss zuerst die Plattform in der Datei Makefile des Hauptordners festgelegt werden. In der Zeile mir "PLATFORM=" muss entweder "linux" bei 32 Bit oder "linux64" bei 64 bit eingetragen werden. Danach kann das Betriebssystem mit der folgenden Zeile in der Konsole (im Hauptordner) gebaut werden: </p>
+<pre class="fragment">make
+</pre><p>Soll die Dokumentation gebaut werden, so ist folgendes einzugeben: </p>
+<pre class="fragment">make doc
+</pre><p>Um wieder aufzuräumen ist folgendes einzugeben: </p>
+<pre class="fragment">make clean
+</pre><p> Dies entfernt sowohl die gebauten, ausführbaren Dateien, als auch die Dokumentation. Soll nur die Dokumentation entfernt werden, so kann statt <code>clean</code> <code>cleanDoc</code> verwendet werden. Sollen die Objektdateien weg, so kann stattdessen <code>cleanBuild</code> verwendet werden.</p>
+<h1><a class="anchor" id="devenv_sec2"></a>
+OOStuBS testen und debuggen</h1>
+<p>Dank dem Emulator QEMU kann OOStuBS relativ leicht ausgeführt und debuggt werden. Mit </p>
+<pre class="fragment">make run
+</pre><p> kann OOStuBS ausgeführt werden. Es öffnet sich ein neues Fester - QEMU - in dem dann das entwickelte Betriebssystem läuft.</p>
+<p>Liegt ein Fehler vor, so kann mit </p>
+<pre class="fragment">make debug
+</pre><p> debuggt werden. Dabei startet sowohl das QEMU-Fenster, als auch gdb in der Konsole. Das System wird dabei gleich angehalten, so dass gleich mit der Arbeit begonnen werden kann.</p>
+<h1><a class="anchor" id="devenv_sec3"></a>
+OOStuBS an echter Hardware testen</h1>
+<p>Um das Betriebssystem auf einem echten Computer zu testen, muss zuerst ein USB-Stick bootfähig gemacht werden. Als Bootmanager bieten sich <a href="http://www.lowlevel.eu/wiki/GRUB_Installation_auf_einem_USB-Stick">GRUB</a> oder <a href="http://www.syslinux.org/wiki/index.php/The_Syslinux_Project">Syslinux</a> an. Für letzteres gibt es in der <a class="el" href="devenv_win.html">Windowsanleitung</a> eine beschriebene Vorgehensweise, die in leicht abgewandelter Form auch unter Linux funktioniert. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Die Apr 16 2013 10:22:23 für OOStuBS - Technische Informatik II (TI-II) von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

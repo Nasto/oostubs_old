@@ -1,0 +1,7 @@
+<map id="kernel" name="kernel">
+<area shape="rect" id="node2" href="$classTask2.html#aa5de17846032b02d6d0819cdc78b1b3e" title="prints the line" alt="" coords="113,81,213,108"/>
+<area shape="rect" id="node3" href="$classCGA__Screen.html#a6f47426c0cf0662b6835d64e08cf929e" title="get the cursor position" alt="" coords="261,5,403,32"/>
+<area shape="rect" id="node4" href="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33" title="set the cursor position" alt="" coords="262,56,402,83"/>
+<area shape="rect" id="node5" href="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9" title="ausgeben des Inhaltes des internen Puffers" alt="" coords="266,107,398,133"/>
+<area shape="rect" id="node6" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="309,157,355,184"/>
+</map>

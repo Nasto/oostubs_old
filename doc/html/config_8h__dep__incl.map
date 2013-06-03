@@ -1,0 +1,19 @@
+<map id="include/config.h" name="include/config.h">
+<area shape="rect" id="node3" href="$strbuf_8h.html" title="include/object/strbuf.h" alt="" coords="808,83,957,111"/>
+<area shape="rect" id="node36" href="$boot_8S.html" title="enthält Start&#45;Code" alt="" coords="981,83,1107,111"/>
+<area shape="rect" id="node5" href="$o__stream_8h.html" title="include/object/o_stream.h" alt="" coords="709,161,880,189"/>
+<area shape="rect" id="node34" href="$strbuf_8cc.html" title="src/object/strbuf.cc" alt="" coords="904,161,1037,189"/>
+<area shape="rect" id="node7" href="$cgastr_8h.html" title="include/device/cgastr.h" alt="" coords="628,238,783,266"/>
+<area shape="rect" id="node32" href="$o__stream_8cc.html" title="src/object/o_stream.cc" alt="" coords="807,238,961,266"/>
+<area shape="rect" id="node9" href="$fixedPointNumber_8h.html" title="include/object/fixedPoint\lNumber.h" alt="" coords="216,315,379,359"/>
+<area shape="rect" id="node15" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="553,323,695,351"/>
+<area shape="rect" id="node28" href="$cgastr_8cc.html" title="CGA_Stream ist hier implementiert" alt="" coords="719,323,857,351"/>
+<area shape="rect" id="node30" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="881,323,969,351"/>
+<area shape="rect" id="node11" href="$fixedPointNumber_8cc.html" title="src/object/fixedPointNumber.cc" alt="" coords="5,409,208,437"/>
+<area shape="rect" id="node13" href="$task3A_8cc.html" title="src/user/task3A.cc" alt="" coords="232,409,363,437"/>
+<area shape="rect" id="node17" href="$guardian_8cc.html" title="Interrupt&#45;Behandlungsfunktionen." alt="" coords="387,409,533,437"/>
+<area shape="rect" id="node19" href="$analyse_8cc.html" title="src/user/analyse.cc" alt="" coords="557,409,691,437"/>
+<area shape="rect" id="node21" href="$task1_8cc.html" title="src/user/task1.cc" alt="" coords="715,409,837,437"/>
+<area shape="rect" id="node23" href="$task2_8cc.html" title="src/user/task2.cc" alt="" coords="861,409,984,437"/>
+<area shape="rect" id="node26" href="$task3B_8cc.html" title="src/user/task3B.cc" alt="" coords="1008,409,1139,437"/>
+</map>

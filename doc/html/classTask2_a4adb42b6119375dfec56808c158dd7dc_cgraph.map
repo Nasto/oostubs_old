@@ -1,0 +1,6 @@
+<map id="Task2::Task2" name="Task2::Task2">
+<area shape="rect" id="node3" href="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33" title="set the cursor position" alt="" coords="156,5,297,33"/>
+<area shape="rect" id="node5" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="204,55,249,83"/>
+<area shape="rect" id="node7" href="$classKeyboard.html#a6d362a122a7c417ff1a5c60152746d61" title="aktiviert den Interruptmechanismus für die Tastatur" alt="" coords="169,106,284,134"/>
+<area shape="rect" id="node9" href="$classCPU.html#ab5e5a2260ef84a433c181786f11c4609" title="Interrupts werden global aktiviert." alt="" coords="169,157,284,185"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="handleException" name="handleException">
+<area shape="rect" id="node3" href="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9" title="ausgeben des Inhaltes des internen Puffers" alt="" coords="172,5,303,33"/>
+<area shape="rect" id="node5" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="215,55,260,83"/>
+<area shape="rect" id="node7" href="$o__stream_8h.html#a143762d59413d6d7cae38fb25104c5c4" title="switch basis of o_stream to decimal" alt="" coords="216,106,259,134"/>
+<area shape="rect" id="node9" href="$o__stream_8h.html#a53efad1d7227486b7c2208929d9b4390" title="switch basis of o_stream to binary" alt="" coords="219,157,256,185"/>
+<area shape="rect" id="node11" href="$classCPU.html#a23c8f5e46dac3304f1d8def9c612b88e" title="Interupts werden global deaktiviert." alt="" coords="179,207,296,235"/>
+<area shape="rect" id="node13" href="$classCPU.html#a189729f4ca240ff52004a34b9057d448" title="hält die CPU an" alt="" coords="199,258,276,286"/>
+</map>

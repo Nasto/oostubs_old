@@ -1,0 +1,9 @@
+<map id="include/object/o_stream.h" name="include/object/o_stream.h">
+<area shape="rect" id="node3" href="$cgastr_8h.html" title="include/device/cgastr.h" alt="" coords="231,83,383,111"/>
+<area shape="rect" id="node15" href="$o__stream_8cc.html" title="src/object/o_stream.cc" alt="" coords="407,83,559,111"/>
+<area shape="rect" id="node5" href="$kout_8h.html" title="alles notwendige zum nutzen der in main.cc deklarierten globalen Variable kout" alt="" coords="8,161,147,189"/>
+<area shape="rect" id="node9" href="$cgastr_8cc.html" title="src/device/cgastr.cc" alt="" coords="171,161,307,189"/>
+<area shape="rect" id="node11" href="$main_8cc.html" title="Grunddatei von OOStuBS." alt="" coords="331,161,419,189"/>
+<area shape="rect" id="node13" href="$task1_8cc.html" title="src/user/task1.cc" alt="" coords="443,161,560,189"/>
+<area shape="rect" id="node7" href="$guardian_8cc.html" title="src/guard/guardian.cc" alt="" coords="5,238,149,266"/>
+</map>

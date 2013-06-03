@@ -1,0 +1,10 @@
+<map id="Task1::testKeyboard" name="Task1::testKeyboard">
+<area shape="rect" id="node2" href="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d" title="print buffer after adding a newline" alt="" coords="242,5,289,32"/>
+<area shape="rect" id="node3" href="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9" title="ausgeben des Inhaltes des internen Puffers" alt="" coords="199,56,331,83"/>
+<area shape="rect" id="node4" href="$classCGA__Screen.html#a6f47426c0cf0662b6835d64e08cf929e" title="get the cursor position" alt="" coords="195,107,336,133"/>
+<area shape="rect" id="node5" href="$classKeyboard__Controller.html#a78cf6859d88097a0f2b6945fc86c1d21" title="get the last pressed key" alt="" coords="196,158,335,199"/>
+<area shape="rect" id="node6" href="$classKey.html#a4292f24b142a697e610fb7780a0dc9d5" title="test for validity." alt="" coords="226,224,305,251"/>
+<area shape="rect" id="node7" href="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33" title="set the cursor position" alt="" coords="195,275,335,301"/>
+<area shape="rect" id="node8" href="$classKey.html#abb65ed9de2b4a8c24f557416b484df34" title="set ascii value" alt="" coords="227,325,304,352"/>
+<area shape="rect" id="node9" href="$classKey.html#ae67075af1a5c0a7f585e8e61fc8515f8" title="set scancode value" alt="" coords="213,376,318,403"/>
+</map>

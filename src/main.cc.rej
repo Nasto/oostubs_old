@@ -1,0 +1,30 @@
+--- src/main.cc	2013-05-21 18:52:48.359878642 +0200
++++ src/main.cc	2013-05-21 18:41:25.459865822 +0200
+@@ -83,6 +99,27 @@
+  **/
+ void kernel(uint32_t magic, const Multiboot_Info* info){
+   
++  #if USE_TASK == 30
++    TaskClass task1;
++    SndTaskClass task2;
++    
++    kout.clear();
++    kout.setpos(25,1);
++    kout << "OOStuBs - Task 3A und Task 3B" << endl << endl;
++    while(true){
++      kout.flush();
++      globalTaskChoice = 0;
++      kout << endl << "bitte Aufgabe waehlen (Alt + [1/2])" << endl;
++      while(globalTaskChoice!=1 && globalTaskChoice!=2){
++        cpu.halt();
++      }
++      if(1 == globalTaskChoice){
++        task1.action();
++      }else{
++        task2.action();
++      }
++    }
++  #else
+   #if USE_TASK == 10
+     TaskClass task(magic, info);
+   #else

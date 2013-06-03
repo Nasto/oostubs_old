@@ -1,0 +1,18 @@
+digraph "kernel"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="kernel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="Task2::action",height=0.2,width=0.4,color="black",URL="$classTask2.html#aa5de17846032b02d6d0819cdc78b1b3e",tooltip="prints the line"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="CGA_Screen::getpos",height=0.2,width=0.4,color="black",URL="$classCGA__Screen.html#a6f47426c0cf0662b6835d64e08cf929e",tooltip="get the cursor position"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="CGA_Screen::setpos",height=0.2,width=0.4,color="black",URL="$classCGA__Screen.html#a346b7ccc05356f76e738a76a24510e33",tooltip="set the cursor position"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="CGA_Stream::flush",height=0.2,width=0.4,color="black",URL="$classCGA__Stream.html#a73572f5377a28f09ee9dc3af7b5a65b9",tooltip="ausgeben des Inhaltes des internen Puffers"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="endl",height=0.2,width=0.4,color="black",URL="$o__stream_8h.html#a28de23f7cab39bdb0f6a5dc3801b6c6d",tooltip="print buffer after adding a newline"];
+}
